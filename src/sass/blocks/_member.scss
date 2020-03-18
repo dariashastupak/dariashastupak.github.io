@@ -1,0 +1,104 @@
+.member {
+    padding: 122px 0 100px 0;
+    &__item {
+        width: 370px;
+        outline: none;
+        &_header {
+            margin-top: 38px;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        &_subheader {
+            margin-top: 12px;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.75px;
+        }
+        .member__links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+           .member__link {
+               margin-right: 13.5px;
+               margin-left: 13.5px;
+               text-decoration: none;
+               &:hover {
+                   .member__rec {
+                       background-color: #3949ab;
+                       i {
+                           color: #ffffff;
+                       }
+                   }
+               }
+               .member__rec {
+                width: 50px;
+                height: 50px;
+                background-color: #f0f1f1;
+                border-radius: 10px;
+                padding-top: 10px;
+                text-align: center;
+                i {
+                    font-size: 30px;
+                    color: #00897b;
+                }
+            }
+           }
+        }
+    }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 127px;
+        position: relative;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 120px;
+        button {
+            background-color: #00897b;
+            border-radius: 100%;
+            border: none;
+            width: 15px;
+            height: 15px;
+            text-indent: -9999px;
+            cursor: pointer;
+            margin-right: 4.5px;
+            margin-left: 4.5px;
+            outline: none;
+        }
+        .slick-active {
+            button {
+                background-color: #3949ab;
+            }
+        }
+    }
+    .slick-prev  {
+        position: absolute;
+        top: -20%;
+        left: 30%;
+        border: none;
+        background-color: #fff;
+       img {
+        width: 31px;
+        height: 50px;
+       } 
+    }
+    .slick-next {
+        position: absolute;
+        top: -20%;
+        right: 30%;
+        border: none;
+        background-color: #fff;
+       img {
+        width: 31px;
+        height: 50px;
+       } 
+    }
+}

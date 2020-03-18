@@ -1,0 +1,83 @@
+.contact {
+    padding: 128px 0 219px 0;
+    background: url(../img/footer_bg.jpg) center (center / cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        .contact__item {
+            width: 244px;
+            .contact__icon {
+                margin: 0 auto;
+                width: 106px;
+                height: 106px;
+                background-color: #3949ab;
+                border-radius: 100%;
+                padding-top: 22px;
+                
+                
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            .contact__links {
+                text-align: center;
+                margin-top: 39px;
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: "Open Sans";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 1px;
+                    &:nth-child(1) {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .contact__icon-padding {
+        position: relative;
+        img {
+            position: absolute;
+            top: 32px;
+            left: 23px;
+        }
+    }
+    form {
+        margin-top: 84px;
+        position: relative;
+        input {
+            width: 48%;
+            height: 84px;
+            padding-left: 21px;
+            border: none;
+            border-radius: 10px;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            &:nth-child(1) {
+                margin-right: 30px;
+            }
+        }
+        textarea {
+            width: 100%;
+            margin-top: 33px;
+            height: 323px;
+            border-radius: 10px;
+            border: none;
+            padding-top: 29px;
+            padding-left: 20px;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 1px;
+            resize: none;
+        }
+    }
+}

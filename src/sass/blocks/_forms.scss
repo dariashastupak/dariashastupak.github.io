@@ -1,0 +1,76 @@
+.search{
+    position: relative;
+  }
+  .input{
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 100%;
+    border: 2px solid #212121;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.5s ease
+    
+   }
+   .input {
+       &:focus {
+           color: #212121;
+       }
+   }
+  .inclicked{
+    width: 200px;
+    border-radius: 25px;
+    height: 25px;
+    padding: 0 15px;
+    padding-right: 10px;
+  }
+  .btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:0;
+    right: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn::before{
+    content: "";
+    width: 2px;
+    height: 7px;
+    background: #212121;
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: -3px;
+    right: 2px;
+    
+  }
+  .close::before,.close::after{
+    content: "";
+    width: 2px;
+    height: 15px;
+    background: #e20b0b;
+    position: absolute;
+    top: 32%;
+    right: 14px;
+    transition: 0.5s ease;
+  }
+  .close::before{
+      transform: rotate(-45deg);
+  }
+  .close::after{
+      transform: rotate(45deg);
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+
+  

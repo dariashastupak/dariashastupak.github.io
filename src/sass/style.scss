@@ -1,0 +1,33 @@
+@import 'libs/font';
+@import 'libs/slick';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Open Sans' , 'Open Sans Regular' , sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/forms';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/info';
+@import 'blocks/services';
+@import 'blocks/work';
+@import 'blocks/price';
+@import 'blocks/member';
+@import 'blocks/blog';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'blocks/modal';
+@import 'blocks/burger';
+@import 'blocks/tabs';
+@import 'blocks/media';
+

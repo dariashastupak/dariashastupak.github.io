@@ -1,0 +1,76 @@
+.tabs {
+    &__caption {
+        margin: 0 auto;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 112px;
+        .tabs__caption-link {
+            border: 2px solid #00897b;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: #fff;
+            cursor: pointer;
+            width: 179px;
+            height: 55px;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 10px;
+            &_active {
+                color: #fff;
+                background-color: #00897b;
+            }
+            &:nth-child(1) {
+                width: 100px;
+            }
+        }
+    }
+    .tabs__content-item {
+        width: 370px;
+        position: relative;
+        margin-top: 20px;
+        &:hover {
+            .tabs__content-item_effect {
+                display: block;
+            }
+        }
+        &_effect {
+            display: none;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 148px;
+            letter-spacing: 1px;
+            background-color: rgba(72,72,72,.7);
+            cursor: pointer;
+            span {
+                color: #fff;
+                font-family: "Open Sans";
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: .75px;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    .tabs__content {
+        display: none; 
+      }
+      .tabs__content.active {
+        display: flex; 
+      }
+}
