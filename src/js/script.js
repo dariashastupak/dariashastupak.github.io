@@ -60,10 +60,7 @@ $(document).ready(function(){
         ]
     });
     
-    $("a#example").fancybox({
-      'transitionIn'  : 'elastic',
-      'transitionOut'  : 'elastic'
-    });
+   
     
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1600) {
@@ -77,7 +74,7 @@ $(document).ready(function(){
         $(this)
           .addClass('tabs__caption-link_active').siblings().removeClass('tabs__caption-link_active')
           .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-      });
+    });
     
     $("a[href^='#']").click(function(){
         var _href = $(this).attr("href");
