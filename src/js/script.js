@@ -86,6 +86,14 @@ $(document).ready(function(){
         $('.overlay, #thanks ').fadeOut('slow');
     });
 
+    $("a.gallery_img").fancybox({
+      'transitionIn'	:	'elastic',
+      'transitionOut'	:	'elastic',
+      'speedIn'		:	600, 
+      'speedOut'		:	200, 
+      'overlayShow'	:	false
+    });
+
     $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
