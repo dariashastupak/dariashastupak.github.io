@@ -32,19 +32,19 @@
         width: 370px;
         position: relative;
         margin-top: 20px;
-        &:hover {
-            img {
-                background-color: rgba(72,72,72,.7);
-                z-index: 10;
-            }
-            .tabs__content-item_effect {
-                display: inline;
-            }
-        }
+        
         &_effect {
             display: none;
+            position: absolute;
+            background-color: rgba(72, 72, 72, 0.7);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transition: .5s ease;
             text-align: center;
-            
             color: #fff;
             font-family: "Open Sans";
             font-size: 20px;

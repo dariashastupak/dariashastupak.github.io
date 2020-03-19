@@ -94,6 +94,16 @@ $(document).ready(function(){
       'overlayShow'	:	false
     });
 
+    $(".fancybox").fancybox({
+      type: "image",
+      onStart: function (el, index) {
+          var thisElement = $(el[index]);
+          $.extend(this, {
+              href: thisElement.data("href")
+          });
+      }
+  });
+
     $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
