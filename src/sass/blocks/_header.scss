@@ -6,6 +6,11 @@ header {
     z-index: 1;
     padding-top: 28px;
     padding-left: 50px;
+    .logo_hover {
+        &:hover {
+           transform: scale(1.2);
+        }
+    }
     nav {
         width: 70%;
         display: flex;
@@ -25,6 +30,10 @@ header {
                 text-decoration: none;
                 margin-right: 40px;
                 color: #000000;
+                &:hover {
+                    color: #00897b;
+                    transform: scale(1.1);
+                }
         }
     }
     

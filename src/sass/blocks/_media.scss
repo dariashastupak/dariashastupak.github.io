@@ -1,6 +1,8 @@
 @media (max-width: 414px) {
     
-    
+    .container {
+        max-width: 90%;
+    }
     
     header {
         height: 60px;
@@ -197,6 +199,10 @@
 
 @media (min-width: 415px) and (max-width: 980px) {
 
+    
+    .container {
+        max-width: 90%;
+    }
     
     header {
         height: 60px;
