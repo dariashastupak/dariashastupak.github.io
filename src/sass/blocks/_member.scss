@@ -78,6 +78,24 @@
                 background-color: #3949ab;
             }
         }
+        #slick-slide-control00 {
+            &:hover {
+                transform: scale(1.2);
+                background-color: #FB6F0E;
+            }
+        }
+        #slick-slide-control01 {
+            &:hover {
+                transform: scale(1.2);
+                background-color: #FB6F0E;
+            }
+        }
+        #slick-slide-control02 {
+            &:hover {
+                transform: scale(1.2);
+                background-color: #FB6F0E;
+            }
+        }
     }
     .slick-prev  {
         position: absolute;

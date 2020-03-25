@@ -59,6 +59,25 @@ $(document).ready(function(){
       }
         ]
     });
+    $('.price__wrapper').slick({
+      prevArrow:'<button type="button" class="slick-prev"><img src="icons/arrow_left1.svg"></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="icons/arrow_right1.svg"></button>',
+        responsive: [
+          {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+        {
+          breakpoint: 980,
+           settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false
+              }
+      }
+        ]
+    });
     
    
     
@@ -130,6 +149,7 @@ $(document).ready(function(){
     });
 
 });
+
 
 $(".btn").on("click",function() {
     $(".input").toggleClass("inclicked");

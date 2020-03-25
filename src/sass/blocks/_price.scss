@@ -82,4 +82,26 @@
             }
         }
     }
+    .slick-prev  {
+        position: absolute;
+        top: -4%;
+        left: 35%;
+        border: none;
+        background-color: #F0F0F0;
+       img {
+        width: 31px;
+        height: 50px;
+       } 
+    }
+    .slick-next {
+        position: absolute;
+        top: -4%;
+        right: 35%;
+        border: none;
+        background-color: #F0F0F0;
+       img {
+        width: 31px;
+        height: 50px;
+       } 
+    }
 }

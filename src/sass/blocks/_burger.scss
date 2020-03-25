@@ -1,5 +1,6 @@
 .open{
-	top: 10px;
+	position: absolute;
+	top: 0;
 	right: 40px;
 	width: 50px;
 	height: 50px;
@@ -39,7 +40,7 @@
 		right: 0;
 		top: 0;
 		position: absolute;
-		background-color: rgba(38, 84, 133, 0.54);
+		background-color: rgba(27, 78, 133, 0.54);
 		border-radius: 50%;
 		z-index: 18;
 		overflow: hidden;
@@ -51,10 +52,11 @@
             margin-right: -160px;
             margin-bottom: 10px;
             text-decoration: none;
-            color: #000000;
+            color: #ffffff;
 			transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			&:first-child{
-				margin-top: 180px;
+				margin-top: 200px;
+			
 			}
 			
 			a{
@@ -81,6 +83,7 @@
 		span:nth-child(1), span:nth-child(3){
 			z-index: 100;
 			transform: rotate(45deg);
+			background-color: #fff;
 		}
 		span:nth-child(1){
 			transform: rotate(45deg) translateY(12px) translateX(12px);
@@ -91,14 +94,38 @@
 			right: -160px;
 			top: -160px;
 			border-radius: 50%;
-			background-color: rgba(0, 53, 47, 1);
+			background-color: #47A99D;
 		}
 		span:nth-child(3){			
 			transform: rotate(-45deg) translateY(-10px) translateX(10px);
 		}
 		a{
-			margin-right: 210px;
+			margin-right: 0;
 			font-size: 19px;
+			&:nth-child(1) {
+				margin-right: 330px;
+				transition: 0.5s;
+			}
+			&:nth-child(2) {
+				margin-right: 320px;
+				transition: 0.6s;
+			}
+			&:nth-child(3) {
+				margin-right:280px;
+				transition: 0.7s;
+			}
+			&:nth-child(4) {
+				margin-right: 260px;
+				transition: 0.8s;
+			}
+			&:nth-child(5) {
+				margin-right: 225px;
+				transition: 0.9s;
+			}
+			&:nth-child(6) {
+				margin-right: 220px;
+				transition: 1s;
+			}
 		}
 	}
 .button{
